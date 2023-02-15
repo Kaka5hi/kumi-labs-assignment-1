@@ -1,0 +1,28 @@
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  position: sticky;
+  left: 0;
+  top: 102px;
+  background-color: #fff;
+  z-index: 99999;
+  overflow-x: auto;
+  width: 100%;
+  padding: 15px 25px;
+  transform: 400ms ease-in-out;
+  border-bottom: 1px solid #ededed;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .topbar {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .topbar {
+    padding-block: 10px;
+  }
+}

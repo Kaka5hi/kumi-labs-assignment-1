@@ -1,0 +1,41 @@
+.sidebar {
+  flex: 1;
+  padding: 20px;
+  padding-bottom: 102px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-transform: capitalize;
+  height: 100%;
+  overflow-y: scroll;
+  position: fixed;
+  left: 0;
+  top: 102px;
+  width: 250px;
+}
+
+.sidebar > .category-list {
+  color: var(--medium-font-color);
+  padding: 10px;
+  border-radius: 10px;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 140%;
+  cursor: pointer;
+}
+
+.active.category-list {
+  background-color: var(--active-link-color);
+  color: white;
+}
+
+.sidebar::-webkit-scrollbar {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+}

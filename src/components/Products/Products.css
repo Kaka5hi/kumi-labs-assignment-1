@@ -1,0 +1,15 @@
+.products {
+  flex: 5;
+  padding: 20px 0 20px 20px;
+  margin-left: 250px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .products {
+    margin-left: unset;
+  }
+}

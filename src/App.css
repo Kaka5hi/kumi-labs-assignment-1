@@ -1,0 +1,54 @@
+/* root variables */
+:root {
+  --heading-font: "Hepta Slab", serif;
+  --content-font: "Mulish", sans-serif;
+  --main-font-color: #100e3a;
+  --medium-font-color: #737d94;
+  --light-font-color: #b6bac3;
+  --active-link-color: #5da9e9;
+  --nav-bg-color: #ffe475;
+  --btn-color: #40d589;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: var(--content-font);
+  /* overflow: hidden; */
+}
+
+main {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 102px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  display: none;
+}
+
+::-webkit-scrollbar-track {
+  background: #c5c5c5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--active-link-color);
+  border-radius: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    display: block;
+  }
+}

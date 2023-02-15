@@ -1,0 +1,52 @@
+nav {
+  color: var(--main-font-color);
+  background-color: var(--nav-bg-color);
+  display: flex;
+  align-items: center;
+  height: 102px;
+  padding: 25px 20px;
+  gap: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+  z-index: 99999;
+}
+
+nav > h1 {
+  font-family: var(--heading-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 140%;
+}
+
+nav > span {
+  margin-left: auto;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 77px;
+  height: 34px;
+  gap: 5px;
+  padding: 5px 20px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 100px;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+nav > span > svg {
+  width: 24px;
+  height: 24px;
+}
+
+@media screen and (max-width: 500px) {
+  nav {
+    background: #fff;
+    padding: 10px 20px;
+  }
+}

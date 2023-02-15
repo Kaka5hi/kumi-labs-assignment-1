@@ -1,0 +1,40 @@
+.single-topbar-category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  text-transform: capitalize;
+  color: var(--light-font-color);
+}
+
+.single-topbar-category > svg {
+  background: #ededed;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 5px;
+  width: 48px;
+  height: 48px;
+  padding: 12px;
+}
+
+.single-topbar-category > span {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 140%;
+  text-align: center;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.active.single-topbar-category svg {
+  background: var(--active-link-color);
+  color: #fff;
+}
+
+.active.single-topbar-category span {
+  color: var(--active-link-color);
+  font-weight: 800;
+}
